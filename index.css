@@ -1,0 +1,44 @@
+* {
+    border: 0;
+    font-family: 'Roboto', Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('./imgs/background.png');
+}
+
+h1 {
+    color: rgb(241, 241, 241);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.26);
+    height: 200%;
+    padding: 1%;
+}
+
+li {
+    color: rgb(241, 241, 241);
+    display: inline;
+    list-style: none;
+    margin-right: 0.5%;
+    
+}
+
+#main-card{
+    background-color: rgba(36, 17, 17, 0.75);
+    margin: auto;
+    width: 75%;
+    height: 640px;
+}
+
+nav {
+    text-align: right;
+    margin-right: 5%;
+}
+
+ul {
+    
+}
