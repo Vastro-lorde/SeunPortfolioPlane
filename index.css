@@ -1,22 +1,56 @@
 * {
     border: 0;
+    color: rgb(241, 241, 241);
     font-family: 'Roboto', Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-body {
-    background-image: url('./imgs/background.png');
+@keyframes animateBlink {
+    from {color: rgb(241, 241, 241)}
+    to {color: rgba(100, 48, 48, 0.75)}
+  }
+
+a {
+    text-decoration: none;
 }
 
-h1 {
+a:hover{
+    animation: animateBlink;
+    animation-duration: 0.5s;
+    text-decoration: underline 10px solid rgba(100, 48, 48, 0.75);
+}
+
+body {
+    background-image: url('./imgs/background1.jpg');
+    background-size: cover;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.75);
     color: rgb(241, 241, 241);
+    padding: 1%;  
+    text-align: center;
+}
+
+h1,h2,p {
+    padding: 0.5%;
+}
+
+h1:hover {
+    animation: animateBlink;
+    animation-duration: 0.5s;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.26);
+    background-color: rgba(0, 0, 0, 0.75);
     height: 200%;
     padding: 1%;
+}
+
+#homebg {
+    background-image: url('./imgs/background.png');
+    background-size: cover;
 }
 
 li {
@@ -29,9 +63,35 @@ li {
 
 #main-card{
     background-color: rgba(36, 17, 17, 0.75);
+    height: 480px;
     margin: auto;
-    width: 75%;
-    height: 640px;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    border-radius: 5%;
+    width: 88%;
+}
+
+#main-card:hover{
+    box-shadow: 0 4px 8px 0 rgba(255, 144, 144, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#main-card-home{
+    background-color: rgba(36, 17, 17, 0.75);
+    height: 480px;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    border-radius: 5%;
+    width: 88%;
+}
+
+#main-card-home:hover{
+    box-shadow: 0 4px 8px 0 rgba(255, 144, 144, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#namecard {
+    padding-top: 1%;
+    padding-left: 5%;
 }
 
 nav {
@@ -39,6 +99,27 @@ nav {
     margin-right: 5%;
 }
 
-ul {
-    
+.profileImg:hover{
+    box-shadow: 0 4px 8px 0 rgba(255, 144, 144, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#profilePic{
+    border-radius: 50%;
+    margin-left: 77%;
+    margin-top: -8%;
+    width: 15%;
+}
+
+#profilePicCenter {
+    border-radius: 50%;
+    margin-top: -5%;
+    margin-left: 45%;
+    width: 12%;
+}
+
+#profilePicLeft {
+    border-radius: 50%;
+    margin-top: -5%;
+    margin-left: 5%;
+    width: 12%;
 }
