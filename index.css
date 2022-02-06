@@ -13,6 +13,28 @@
 
 a {
     text-decoration: none;
+    font-weight: bold;
+}
+
+#about {
+    background-color: rgba(36, 17, 17, 0.75);
+    height: 700px;
+    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    border-radius: 5%;
+    width: 88%;
+}
+
+.aboutCard{
+    margin-right: 10%;
+}
+
+#aboutTable {
+    height: 70%;
+    width: 100%;
+    padding : 5%;
+    table-layout: fixed;
 }
 
 a:hover{
@@ -57,7 +79,12 @@ header {
     background-size: cover;
 }
 
-li {
+li{
+    font-size: 12px;
+    margin: 5%;
+}
+
+.nav-item {
     color: rgb(241, 241, 241);
     display: inline;
     list-style: none;
@@ -129,7 +156,14 @@ nav {
 }
 
 .profileImg{
+    display: inline;
+    border: 1px solid;
+}
+
+.projectImg{
     display: block;
+    margin: auto;
+    width: 40px;
 }
 
 .socialImg {
@@ -137,11 +171,36 @@ nav {
     width: 60px;
 }
 
-table {
+#contactTable {
     margin: auto;
     width: 25%;
     text-align: left;
 }
+
+.projectTab {
+    background-color : rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    padding: 10%;
+}
+
+.projectTab:hover{
+    background-color : rgba(0, 0, 0, 1)
+}
+
+.projectTab>a{
+    font-size: 12px;
+}
+
+#projectTable {
+    height: 40%;
+    width: 40%;
+    margin: auto;
+    padding: 1%;
+    table-layout: fixed;
+    text-align: center;
+}
+
+
 
 #table {
     margin-left: 5%;
