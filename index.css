@@ -39,7 +39,11 @@ h1,h2,p {
 
 h1:hover {
     animation: animateBlink;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    color: #fff;
+    font-size: xxx-large;
+    text-shadow: 0 0 10px #fff,0 0 20px #fff,0 0 40px #fff;
 }
 
 header {
@@ -122,4 +126,30 @@ nav {
     margin-top: -5%;
     margin-left: 5%;
     width: 12%;
+}
+
+.profileImg{
+    display: block;
+}
+
+.socialImg {
+    display: inline;
+    width: 60px;
+}
+
+table {
+    margin: auto;
+    width: 25%;
+    text-align: left;
+}
+
+#table {
+    margin-left: 5%;
+}
+
+#title {
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 3%;
+    text-align: center;
 }
