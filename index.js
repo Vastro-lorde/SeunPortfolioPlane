@@ -1,9 +1,8 @@
-
-document.body.addEventListener('click', function() {
-    var audio = new Audio("./audio/Monlisa.mp3");
-    audio.play();
-}, {once : true});
-
-document.body.addEventListener('click', function() {
-
-}, {once : true});
+let currentTime = ()=>{
+    const footers = document.getElementById("footer");
+    let past = Date.now();
+    let time = new Date(past);
+    footers.innerHTML = time.toString();
+    setTimeout(function(){ currentTime() }, 100);
+}
+currentTime();
